@@ -124,5 +124,8 @@ function showCSE() {
     displayCourses(cseCourses);
 }
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("allCoursesBtn").addEventListener("click", showAll);
+    document.getElementById("wddCoursesBtn").addEventListener("click", showWDD);
+    document.getElementById("cseCoursesBtn").addEventListener("click", showCSE);
     showWDD();
 });

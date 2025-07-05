@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="WDD 231 Course Home Page">
+        <meta name="description" content="Course Home Page for Christiana Nwachukwu in WDD 231 - Web Frontend Development at BYU-Idaho.">
         <meta name="author" content="Christiana Nwachukwu">
-        <title>WDD 231 - Course Home Page</title>
+        <title>Christiana Nwachukwu | WDD 231 - Course Home Page</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     </head>
     <body>
         <header>
-            <img src="images/hand-holding-droplet-solid.svg" alt="site logo" width="48" height="48">
+            <img src="images/logo.svg" alt="site logo" width="48" height="48">
             <span>Christiana Nwachukwu</span>
             <button id="menu" aria-label="Toggle Menu">&#9776;</button>
         </header>
@@ -48,9 +48,9 @@
             <section>
                 <h2>Web Certificate Courses</h2>
                 <div class="course-filter">
-                <button onclick="showAll()">All Courses</button>
-                <button onclick="showWDD()">WDD Only</button>
-                <button onclick="showCSE()">CSE Only</button>
+                <button id="allCoursesBtn" aria-label="Show all courses">All Courses</button>
+                <button id="wddCoursesBtn">WDD Only</button>
+                <button id="cseCoursesBtn">CSE Only</button>
                 </div>
 
                 <div id="courseCards"></div>
