@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 Course Home Page">
+        <meta name="author" content="Christiana Nwachukwu">
+        <title>WDD 231 - Course Home Page</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/hand-holding-droplet-solid.svg" alt="site logo" width="48" height="48">
+            <span>Christiana Nwachukwu</span>
+            <button id="menu" aria-label="Toggle Menu">&#9776;</button>
+        </header>
+
+        <nav id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+
+            <section>
+                <h2>About This Site</h2>
+                <p>This is WDD 231 home page for Christiana Nwachukwu.</p>
+            </section>
+
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Christiana Nwachukwu">
+            </section>
+
+            <section>
+                <h2>Web Certificate Courses</h2>
+                <div class="course-filter">
+                <button onclick="showAll()">All Courses</button>
+                <button onclick="showWDD()">WDD Only</button>
+                <button onclick="showCSE()">CSE Only</button>
+                </div>
+
+                <div id="courseCards"></div>
+
+                <div class="total-credits">Total Credits: <span id="totalCredits">0</span></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://github.com/christiananwachukwu" target="_blank">
+                    <img src="images/github-brands.svg" alt="GitHub icon" width="32" height="32">
+                </a>
+                <a href="https://www.linkedin.com/in/christiana-nwachukwu-3ab796151?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="images/linkedin-brands.svg" alt="LinkedIn icon" width="32" height="32">
+                </a>
+                <a href="https://www.facebook.com/christy.nwachukwu?mibextid=ZbWKwL" target="_blank">
+                    <img src="images/facebook-brands.svg" alt="Facebook icon" width="32" height="32"> 
+                </a>
+                <a href="https://wa.me/qr/2O5ODHIZ72LEG1" target="_blank">
+                    <img src="images/whatsapp-brands-solid.svg" alt="Whatsapp icon" width="32" height="32"> 
+                </a>
+            </div>
+            <div>
+            <p>&copy; <span id="year"></span> | Christiana Nwachukwu | Nigeria</p>
+            <p id="lastModified"></p>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>

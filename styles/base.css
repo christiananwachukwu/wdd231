@@ -1,0 +1,57 @@
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+header img {
+    width: 24px;
+    height: 24px;
+}
+header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.hamburger {
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.hamburger::before {
+    content: "\2630";
+    font-size: 24px;display: inline-block;
+    line-height: 44px;text-align: center;
+    width: 44px;
+    height: 44px;
+}
+.hamburger.show::before {
+    content: "\00D7";
+}
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space space-around;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 10px;
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
