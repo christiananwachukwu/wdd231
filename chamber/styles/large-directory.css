@@ -1,0 +1,123 @@
+/* === LARGE-DIRECTORY.CSS === */
+
+@media screen and (min-width: 768px) {
+  /* Header */
+  .header-container {
+    padding: 1rem 2rem;
+  }
+
+  .branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .branding h1 {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .branding img {
+    display: block;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav ul.navigation {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-end;
+    background-color: transparent;
+    margin-left: auto;
+  }
+
+  nav ul.navigation li {
+    border: none;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 350px;
+  }
+
+  .hero-button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2;
+  }
+
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Main Content Layout */
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 1rem;
+  }
+
+  main {
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  /* Member Display Styles */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .member-card {
+    text-align: left;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .member-card img {
+    float: left;
+    margin: 0;
+    max-width: 120px;
+  }
+
+  /* View Toggle */
+  .view-toggle {
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  .footer-contact, .footer-container, .social-icons {
+    flex: 1 1 30%;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "members": [
+    {
+      "name": "Sunshine Boutique",
+      "address": "123 Market Rd, Owerri",
+      "phone": "08012345678",
+      "website": "https://sunshineboutique.ng",
+      "image": "drinking-healthy2.webp",
+      "membership": "Gold",
+      "email": "info@sunshineboutique.ng",
+      "tagline": "Your trusted partner in clothing industry"
+    },
+    {
+      "name": "Owerri Tech Hub",
+      "address": "45 Tech Park, Owerri",
+      "phone": "08023456789",
+      "website": "https://owerritechhub.ng",
+      "image": "drinking-healthy.webp",
+      "membership": "Silver",
+      "email": "info@owerritechhub.ng",
+      "tagline": "Your trusted partner in telecommunications"
+    },
+    {
+      "name": "Health First Clinic",
+      "address": "12 Hospital Lane",
+      "phone": "08034567890",
+      "website": "https://healthfirst.ng",
+      "image": "handwashing-1.webp",
+      "membership": "Member",
+      "email": "info@healthfirst.ng",
+      "tagline": "Your trusted partner in health solutions"
+    },
+    {
+      "name": "Blessed Delight Restaurant",
+      "address": "78 Food Plaza",
+      "phone": "08045678901",
+      "website": "https://mothersdelight.ng",
+      "image": "eating-healthy.webp",
+      "membership": "Gold",
+      "email": "info@mothersdelight.ng",
+      "tagline": "Your trusted partner with delight in eating good food"
+    },
+    {
+      "name": "Emeka’s Plumbing",
+      "address": "22 Water Street",
+      "phone": "08056789012",
+      "website": "https://emekaplumbing.ng",
+      "image": "handwashing-2.webp",
+      "membership": "Silver",
+      "email": "info@emekaplumbing.ng",
+      "tagline": "Your trusted partner in plumbing services"
+    },
+    {
+      "name": "Chuks Furniture",
+      "address": "99 Wood Lane",
+      "phone": "08067890123",
+      "website": "https://chuksfurn.ng",
+      "image": "eating-healthy2.webp",
+      "membership": "Member",
+      "email": "info@chuksfurn.ng",
+      "tagline": "Your trusted partner in furniture industry"
+    },
+    {
+      "name": "Smart Learners Academy",
+      "address": "33 School Road",
+      "phone": "08078901234",
+      "website": "https://smartlearners.ng",
+      "image": "girl-brushing.webp",
+      "membership": "Gold",
+      "email": "info@smartlearners.ng",
+      "tagline": "Your trusted partner in education"
+    }
+  ]
+}
+ 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the directory of local businesses in Owerri Chamber of Commerce. find members, contact information , and more...">
+    <meta name="author" content="Christiana Nwachukwu">
+    <meta property="og:title" content="Chamber Directory | Owerri Chamber of Commerce">
+
+    <meta property="og:description" content="Discover local businessesand members of the Owerri Chamber of Commerce.">
+    <meta property="og:image" content="https://christiananwachukwu.github.io/wdd231/chamber/images/social-share.webp">
+    <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <title>Chamber Directory | Owerri Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-directory.css">
+    <link rel="stylesheet" href="styles/large-directory.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="branding">
+            <img src="images/logo.svg" alt="Owerri Chamber of Commerce Logo" width="48" height="48">
+            <h1>Owerri Chamber of Commerce</h1>
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">Discover</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+
+                <button class="hero-button">Keynote Tickets</button>
+    
+    
+                <div class="home-boxes">
+                    <section class="event-box">
+                        <h2>Upcoming Events</h2>
+                        <ul>
+                            <li><strong>Business Networking Platform</strong> - July 21, 2025</li>
+                            <li><strong>Community Trade Fair</strong> - July 26, 2025</li>
+                            <li><strong>Digital Skills Bootcamp</strong> - August 10, 2025</li>
+                        </ul>
+                    </section>
+
+                    <section class="current-weather box">
+                        <h2>Current Weather</h2>
+                        <img src="images/1530387_weather_morning_sun_sunrise_icon.svg" alt="weather-icon showing partly cloudy" width="64" height="64">
+                        <p><strong>Temperature:</strong> 75&deg;F</p>
+                        <p><strong>Condition:</strong> Partly Cloudy</p>
+                        <p><strong>High:</strong> 85&deg; | <strong>Low:</strong> 52&deg;F</p>
+                        <p><strong>Humidity:</strong> 34%</p>
+                        <p><strong>Sunrise:</strong> 7:30am | <strong>Sunset:</strong> 7:59pm</p>
+                    </section>
+                    <section class="forecast-box">    
+                        <h3>Weather Forecast</h3>
+                        <ul>
+                            <li><strong>Today:</strong> 90&deg;F</li>
+                            <li><strong>Saturday:</strong> 89&deg;</li>
+                            <li><strong>Sunday:</strong> 78&deg;</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Owerri Chamber of Commerce</h3>
+            <p>Imo State, Nigeria | 461103</p>
+            <p>Email: christy4one@gmail.com</p>
+            <p>Phone: (234) 80 63862357</p>
+        </div>
+
+       <div class="social-icons">
+                <a href="https://github.com/christiananwachukwu" target="_blank">
+                    <img src="images/github-brands.svg" alt="GitHub icon" width="32" height="32">
+                </a>
+                <a href="https://www.linkedin.com/in/christiana-nwachukwu-3ab796151?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="images/linkedin-brands.svg" alt="LinkedIn icon" width="32" height="32">
+                </a>
+                <a href="https://www.facebook.com/christy.nwachukwu?mibextid=ZbWKwL" target="_blank">
+                    <img src="images/facebook-brands.svg" alt="Facebook icon" width="32" height="32">  
+                </a>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; <span id="year"></span> Owerri Chamber of Commerce</p>
+                <p>WDD 231 Project | Christiana Nwachukwu</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
