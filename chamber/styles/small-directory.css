@@ -135,6 +135,12 @@ main {
   margin: 0 auto;
 }
 
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
