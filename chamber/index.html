@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the directory of local businesses in Owerri Chamber of Commerce. find members, contact information , and more...">
+    <meta name="description" content="Welcome to the Owerri Chamber of Commerce. Discover local businesses, events, and opportunities to grow and connect.">
     <meta name="author" content="Christiana Nwachukwu">
-    <meta property="og:title" content="Chamber Directory | Owerri Chamber of Commerce">
+    <meta property="og:title" content="Home | Owerri Chamber of Commerce">
 
-    <meta property="og:description" content="Discover local businessesand members of the Owerri Chamber of Commerce.">
+    <meta property="og:description" content="Explore Owerri Chamber of Commerce: local business support, networking, and community development.">
     <meta property="og:image" content="https://christiananwachukwu.github.io/wdd231/chamber/images/social-share.webp">
     <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
-    <title>Chamber Directory | Owerri Chamber of Commerce</title>
+    <title>Home | Owerri Chamber of Commerce</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,8 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,46 +47,49 @@
             </nav>
         </div>
     </header>
-
-    <section class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-
-                <button class="hero-button">Keynote Tickets</button>
-    
-    
-                <div class="home-boxes">
-                    <section class="event-box">
-                        <h2>Upcoming Events</h2>
-                        <ul>
-                            <li><strong>Business Networking Platform</strong> - July 21, 2025</li>
-                            <li><strong>Community Trade Fair</strong> - July 26, 2025</li>
-                            <li><strong>Digital Skills Bootcamp</strong> - August 10, 2025</li>
-                        </ul>
-                    </section>
-
-                    <section class="current-weather box">
-                        <h2>Current Weather</h2>
-                        <img src="images/1530387_weather_morning_sun_sunrise_icon.svg" alt="weather-icon showing partly cloudy" width="64" height="64">
-                        <p><strong>Temperature:</strong> 75&deg;F</p>
-                        <p><strong>Condition:</strong> Partly Cloudy</p>
-                        <p><strong>High:</strong> 85&deg; | <strong>Low:</strong> 52&deg;F</p>
-                        <p><strong>Humidity:</strong> 34%</p>
-                        <p><strong>Sunrise:</strong> 7:30am | <strong>Sunset:</strong> 7:59pm</p>
-                    </section>
-                    <section class="forecast-box">    
-                        <h3>Weather Forecast</h3>
-                        <ul>
-                            <li><strong>Today:</strong> 90&deg;F</li>
-                            <li><strong>Saturday:</strong> 89&deg;</li>
-                            <li><strong>Sunday:</strong> 78&deg;</li>
-                        </ul>
-                    </section>
-                </div>
+    <main>
+        <section class="hero">
+            <img src="images/home-hero.webp" alt="Owerri Chamber of Commerce Home Hero Image" >
+            <div class="hero-text">
+                <h2>Welcome to Owerri Chamber of Commerce</h2>
+                <p>Connecting businesses, growing communities.</p>
+                <a href="#" class="cta-button">Join the Chamber</a>
             </div>
-        </div>
-    </section>   
+        </section>
 
+        <section class="events">
+            <div class="event-loading">
+            <h2>Upcoming Events</h2>
+            </div>
+            <div class="event-details">
+            <ul>
+                <li><strong>SME Business Workshop</strong> - July 23, 2025</li>
+                <li><strong>Owerri Trade Fair</strong> - August 12, 2025</li>
+                <li><strong>Enterprenuers Networking Gala</strong> - November 28, 2025</li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather in Owerri</h2>
+            <div class="weather-info">
+                <img id="weather-icon" src="images/placeholder.png" alt="Weather Icon" width="60" height="60" loading="lazy">
+                <p><span id="current-temp"></span> - <span id="weather-desc"></span></p>
+            </div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast-cards" class="forecast-container">
+            </div>
+        </section>
+
+        <section class="spotlight-grid" id="spotlight-section">
+            <div class="spotlight-heading">
+            <h2>Member Spotlights</h2>
+            </div>
+            <div class="spotlight-container" id="spotlights">
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <div class="footer-contact">
             <h3>Owerri Chamber of Commerce</h3>

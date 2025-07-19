@@ -42,7 +42,20 @@
 
   /* Hero Section */
   .hero {
-    height: 350px;
+    height: 450px;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .hero-button {
@@ -71,6 +84,21 @@
     margin: 0 auto;
   }
 
+  main > section  {
+    margin-bottom: 3rem;
+  }
+
+  .spotlight-container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .spotlight-card {
+    flex: 1 1 30%;
+    max-width: 300px;
+  }
+
   /* Member Display Styles */
   .grid {
     display: grid;
@@ -95,6 +123,15 @@
     float: left;
     margin: 0;
     max-width: 120px;
+  }
+
+  .events li {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .weather h2 {
+    font-size: 2rem;
   }
 
   /* View Toggle */

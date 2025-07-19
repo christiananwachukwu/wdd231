@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #cce3f7, #f1f9ff);
+  color: #003366;
+  padding: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #004e89;
+  margin-bottom: 1rem;
+}
+
+#weather-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 2rem;
+  max-width: 300px;
+  margin: auto;
+}
+
+#weather-icon {
+  width: 100px;
+  height: auto;
+}
+
+#current-temp {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+#caption-desc {
+  font-style: italic;
+  color: #006494;
+  margin-top: 0.5rem;
+}
