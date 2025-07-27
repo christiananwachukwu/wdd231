@@ -69,8 +69,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  /* Main Content Layout */
-
+  /* Main Content Layout - General Pages (e.g., index, directory) */
   .main-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -79,7 +78,7 @@
   }
 
   main {
-    max-width: 1200px;
+    max-width: 1200px; /* Ensure main has a max-width for large screens */
     padding: 2rem;
     margin: 0 auto;
   }
@@ -99,7 +98,7 @@
     max-width: 300px;
   }
 
-  /* Member Display Styles */
+  /* Member Display Styles for Directory Page */
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -132,6 +131,161 @@
 
   .weather h2 {
     font-size: 2rem;
+  }
+
+  /* --- Styles specific to Join Page Layout --- */
+  .main-join-container { /* New container for join.html layout */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Form (left) takes more space than benefits (right) */
+    gap: 2rem;
+    align-items: flex-start; /* Ensure sections align to the top of their grid area */
+  }
+
+  /* Apply styling directly to sections for distinct boxes */
+  .join-section {
+    grid-column: 1 / 2;
+    background-color: #ffffff; /* White background for the form section */
+    padding: 2.5rem 2rem; /* Consistent padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Clearer shadow */
+  }
+
+  .page-title {
+    font-size: 2.5rem !important; /* Slightly larger heading for large screens */
+    margin-top: 0; /* Remove extra top margin */
+    margin-bottom: 1.5rem; /* Space below heading */
+    text-align: center;
+  }
+
+  .join-form {
+    /* No changes needed here, as its parent .join-section now handles the main box styling */
+    padding: 0; /* Remove padding here as .join-section has it */
+    box-shadow: none; /* Remove box-shadow here */
+    border-radius: 0; /* Remove border-radius here */
+    background-color: transparent; /* Remove background here */
+    max-width: none; /* Let it expand within its section */
+    margin: 0; /* Remove margin here */
+  }
+
+  .join-form label {
+    font-size: 1.1rem; /* Slightly larger label text */
+  }
+
+  .join-form input[type="text"],
+  .join-form input[type="email"],
+  .join-form input[type="tel"],
+  .join-form select,
+  .join-form textarea {
+    padding: 1rem 1.2rem; /* Slightly larger padding for inputs */
+    font-size: 1.1rem; /* Larger font size for inputs */
+  }
+
+  .join-form input[type="submit"] {
+    padding: 1.2rem 2rem; /* Larger submit button */
+    font-size: 1.25rem;
+  }
+
+  /* --- Thank You Page Specific Styles for Large Screens --- */
+  .thank-you-section {
+    padding: 3rem 2.5rem; /* More padding for large screens */
+    max-width: 800px; /* Wider content area */
+    margin: 3rem auto; /* More vertical space */
+  }
+
+  .thank-you-section h1 {
+    font-size: 2.8rem; /* Larger heading */
+    margin-bottom: 1.5rem;
+  }
+
+  .thank-you-section p {
+    font-size: 1.1rem;
+  }
+
+  .thankyou-details {
+    padding: 2rem; /* More padding for details */
+  }
+
+  .thankyou-details h2 {
+    font-size: 1.8rem; /* Larger welcome message */
+  }
+
+  .thankyou-details p {
+    font-size: 1rem;
+  }
+
+  /* Apply styling directly to the membership section for its distinct box */
+  .membership-section {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between membership cards */
+    background-color: #ffffff; /* White background */
+    padding: 2.5rem 2rem; /* Consistent padding with form section */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .membership-section h2 {
+    font-size: 2.2rem; /* Larger heading for membership benefits */
+    margin-top: 0; /* Remove extra top margin */
+    margin-bottom: 1.5rem; /* Space below heading */
+    text-align: center;
+  }
+
+  .membership-card {
+    /* These are now contained within the main .membership-section box */
+    background-color: #f8f8f8; /* A very light grey to subtly distinguish */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Lighter shadow for nested elements */
+    transition: transform 0.3s ease; /* Add a subtle hover effect */
+  }
+
+  .membership-card:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+  }
+
+  .membership-card h3 {
+      font-size: 1.6rem; /* Make card headings more prominent */
+      margin-bottom: 0.8rem;
+  }
+
+  .membership-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  .membership-card button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+  }
+
+  /* --- Animation for Membership Cards (no changes) --- */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .membership-card {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .membership-card:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .membership-card:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .membership-card:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  .membership-card:nth-child(4) {
+    animation-delay: 1.2s;
   }
 
   /* View Toggle */

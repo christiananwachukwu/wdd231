@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the directory of local businesses in Owerri Chamber of Commerce. Find members, contact information , and more...">
+    <meta name="description" content="Thank you for joining the Owerri Chamber of Commerce.">
     <meta name="author" content="Christiana Nwachukwu">
-    <meta property="og:title" content="Chamber Directory | Owerri Chamber of Commerce">
+    <meta property="og:title" content="Thank You | Owerri Chamber of Commerce">
 
-    <meta property="og:description" content="Discover local businessesand members of the Owerri Chamber of Commerce.">
+    <meta property="og:description" content="Membership registration success page.">
     <meta property="og:image" content="https://christiananwachukwu.github.io/wdd231/chamber/images/social-share.webp">
-    <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/chamber/thankyou.html">
     <meta property="og:type" content="website">
-    <title>Chamber Directory | Owerri Chamber of Commerce</title>
-
-    <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
+    <title>Thank You | Owerri Chamber of Commerce</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small-directory.css">
     <link rel="stylesheet" href="styles/large-directory.css">
@@ -26,20 +25,19 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="branding">
             <img src="images/logo.svg" alt="Owerri Chamber of Commerce Logo" width="48" height="48">
-            <span class="site-name">Owerri Chamber of Commerce</span>
             </div>
             <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join Us</a></li>
                     <li><a href="#">Discover</a></li>
 
@@ -47,25 +45,17 @@
             </nav>
         </div>
     </header>
-
-    <div class="hero">
-        <div class="hero-overlay">
-        <button class="hero-button">Keynote Tickets</button>
-        </div>
-    </div>
-
     <main>
-        <h1>Chamber Directory | Owerri Chamber of Commerce</h1>
-        <h2>Chamber Member Directory</h2>
-        <div class="view-toggle">
-            <button id="grid-view-button" class="active">Grid View</button>
-            <button id="list-view-button">List View</button>
-        </div>
-        <section id="members-display" class="grid">
-            <h2 class="visually-hidden">Member Cards</h2>
-        </section>
+       <section class="thank-you-section">
+        <div class="thank-you-content">
+            <h1>Thank You for Joining Us</h1>
+            <p>Your membership application has been received.</p>
+            <div class="thankyou-details" id="thankyouDetails"></div>
+            <p>We'll get back to you shortly via email or phone.</p>
+        </div> 
+       </section>
     </main>
-
+    
     <footer>
         <div class="footer-contact">
             <h3>Owerri Chamber of Commerce</h3>
@@ -85,7 +75,7 @@
                     <img src="images/facebook-brands.svg" alt="Facebook icon" width="32" height="32">  
                 </a>
         </div>
-
+        
         <div class="footer-container">
             <div class="footer-info">
                 <p>&copy; <span id="year"></span> Owerri Chamber of Commerce</p>
@@ -94,5 +84,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        const timeStampField = document.getElementById('timestamp');
+        timeStampField.value = new Date().toISOString();
+    </script>
 </body>
 </html>

@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #003366;
+  background-color: #003366; /* Your primary blue */
   color: white;
 }
 
@@ -62,7 +62,7 @@ nav ul.navigation {
   padding: 0;
   margin: 0;
   width: 100%;
-  background-color: #004080;
+  background-color: #004080; /* Slightly darker blue for navigation */
 }
 
 nav ul.navigation.open {
@@ -87,8 +87,9 @@ nav ul.navigation li a {
 }
 
 nav ul.navigation li a:hover, nav ul.navigation li a.active {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker blue on hover/active */
 }
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -113,7 +114,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: purple;
+  color: purple; /* Consider changing this to white or a color that contrasts well with the overlay */
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
   padding: 1rem 2rem;
@@ -131,7 +132,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
 }
 
 .cta-button {
-  background-color: #007acc;
+  background-color: #007acc; /* Your primary action color */
   color: white;
   padding: 0.6rem 1.2rem;
   text-decoration: none;
@@ -140,7 +141,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darker shade on hover */
 }
 
 .hero-overlay {
@@ -174,7 +175,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
 /* Main Content */
 main {
   padding: 1rem;
-  max-width: 960px;
+  max-width: 960px; /* Max width for general content on small screens (can be overridden by large-directory.css) */
   margin: 0 auto;
 }
 
@@ -193,7 +194,7 @@ main {
 h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.8rem;
-  color: white;
+  color: #003366; /* Your primary blue for main headings */
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -203,7 +204,7 @@ h2 {
   padding: 2rem 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .events ul {
@@ -239,11 +240,12 @@ h2 {
 }
 
 .weather {
-  background-color: #e0f4ff;
+  background-color: #e0f4ff; /* Light blue background */
   padding: 2rem 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .weather h2 {
@@ -251,7 +253,7 @@ h2 {
 }
 
 .forecast-day {
-  background-color: #eaf4fc;
+  background-color: #eaf4fc; /* Even lighter blue */
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -268,7 +270,7 @@ h2 {
 .spotlights {
   padding: 1.5rem;
   margin: 2rem 0;
-  background-color: #ccc;
+  background-color: #ccc; /* Grey background for spotlight section */
   border-radius: 10px;
 }
 
@@ -327,7 +329,7 @@ h2 {
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .spotlight-grid {
@@ -337,7 +339,7 @@ h2 {
   padding: 1rem;
 }
 
-/* Member Cards */
+/* Member Cards for Directory Page */
 .grid,
 .list {
   display: flex;
@@ -371,7 +373,7 @@ h2 {
   width: 100%;
   max-width: 120px;
   height: auto;
-  margin: 0.5rem  auto 1rem;
+  margin: 0.5rem auto 1rem;
   display: block;
   border-radius: 4px;
 }
@@ -407,7 +409,309 @@ h2 {
   overflow: hidden;
 }
 
-/* View Toggle */
+/* --- Membership Card Animation (for Join page) --- */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .membership-card {
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 1s ease forwards;
+  }
+  .membership-card:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .membership-card:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .membership-card:nth-child(3) {
+    animation-delay: 0.9s; /* Corrected from 9s */
+  }
+  .membership-card:nth-child(4) {
+    animation-delay: 1.2s;
+  }
+
+/* --- Join Page Specific Layout and Styling for Small Screens --- */
+/* (These typically stack vertically on small screens, grid applied in large-directory.css) */
+.join-section,
+.membership-section {
+  margin-bottom: 2rem;
+}
+
+/* Updated join-form styles for better appeal */
+section.join-section h1 {
+    color: #003366; /* Match your other main headings */
+    font-size: 2rem !important; /* Make it prominent */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.join-form {
+    background-color: #ffffff; /* White background for the form area */
+    padding: 2.5rem 1.5rem; /* More padding for internal spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Clearer shadow to make it stand out */
+    max-width: 600px; /* Optional: Give the form a max-width even on small screens */
+    margin: 0 auto 2rem auto; /* Center the form and add bottom margin */
+    display: flex; /* Already present, good */
+    flex-direction: column; /* Already present, good */
+    gap: 1.2rem; /* Increase gap between form elements slightly */
+}
+
+/* Styles for all text-based inputs, email, tel, textarea, select */
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    width: 100%; /* Full width within its container */
+    padding: 0.8rem 1rem; /* Comfortable padding inside input fields */
+    margin-top: 0.3rem; /* Small space between label text and input */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+.join-form input[type="text"]:focus,
+.join-form input[type="email"]:focus,
+.join-form input[type="tel"]:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    border-color: #007acc; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.2); /* Subtle blue glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.join-form textarea {
+    min-height: 100px; /* Give textarea a good default height */
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Style for labels */
+.join-form label {
+    display: block; /* Ensures label takes full width and input is on next line if desired */
+    font-weight: 500; /* Slightly bolder text for labels */
+    color: #333; /* Darker color for good readability */
+    font-size: 1.05rem;
+}
+
+/* Style for the submit button */
+.join-form input[type="submit"] {
+    background-color: #007acc; /* Consistent with CTA buttons */
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px; /* Slightly more rounded */
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem; /* Space above the button */
+    width: fit-content; /* Make button only as wide as its content */
+    align-self: center; /* Center the button if form is flex column */
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Optional: Placeholder text styling */
+.join-form input::placeholder,
+.join-form textarea::placeholder {
+    color: #888;
+    opacity: 1; /* Ensures placeholder is visible on all browsers */
+}
+
+/* Specific styling for the select dropdown arrow (browser default usually fine, but for consistency) */
+.join-form select {
+    appearance: none; /* Remove default browser styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23333" d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2rem;
+    padding-right: 2.5rem; /* Make space for the custom arrow */
+}
+
+/* --- Thank You Page Specific Styles --- */
+.thank-you-section {
+  background-color: #ffffff; /* White background */
+  padding: 2rem 1.5rem; /* Good internal padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for distinct block */
+  margin: 2rem auto; /* Center and add vertical space */
+  max-width: 600px; /* Limit width on small screens too */
+  text-align: center; /* Center main text */
+}
+
+.thank-you-section h1 {
+  color: #003366; /* Your primary blue */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.thankyou-details {
+  background-color: #f8f8f8; /* Light grey background for details block */
+  border: 1px solid #eee; /* Light border */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left; /* Align details text to the left */
+}
+
+.thankyou-details h2 {
+  color: #007acc; /* Your action color for the welcome message */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.thankyou-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.thankyou-details p strong {
+  color: #003366;
+}
+
+.membership-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.membership-section h2 {
+  color: #003366;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.membership-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.membership-card h3 {
+  color: #003366;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.membership-card p {
+  margin-bottom: 0.5rem;
+}
+
+.membership-card button {
+  background-color: #0A3614; /* Your primary action color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.membership-card button:hover {
+  background-color: #BFFF00; /* Darker shade on hover */
+  color: #0A3614;
+}
+
+/* --- Modal Specific Styles (for Join page) --- */
+.Modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top, higher than other elements */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.6); /* Semi-transparent black overlay */
+  opacity: 0; /* Start invisible for transition */
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in transition */
+}
+
+/* Class added by JavaScript to make the modal visible and trigger fade-in */
+.Modal.open {
+    opacity: 1;
+}
+
+.modal-content {
+  background-color: #fefefe; /* Light background, consistent with your site's light elements */
+  margin: 10% auto; /* 10% from the top and centered horizontally */
+  padding: 2rem;
+  border: 1px solid #888; /* Subtle border */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Max width for larger screens */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  position: relative; /* Needed for positioning the close button */
+  color: #333; /* Default text color for modal content */
+}
+
+.modal-content h4 {
+    color: #003366; /* Use your primary blue for modal headings */
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.modal-content ul {
+    list-style-type: disc; /* Use standard bullet points */
+    margin-left: 1.5rem; /* Indent the list */
+    padding: 0;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    color: #333; /* Darker text for readability */
+}
+
+.close {
+  color: #aaa; /* Lighter grey for consistency */
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  /* Removed float: right; as 'position: absolute' handles placement */
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #007acc; /* Your primary blue on hover */
+  text-decoration: none;
+}
+
+
+/* View Toggle for Directory Page */
 .view-toggle {
   margin: 1rem 0;
   display: flex;
