@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Reset and base styles (KEEP AS IS) */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -49,7 +49,7 @@ header {
   cursor: pointer;
 }
 
-/* Navigation */
+/* Navigation (KEEP AS IS) */
 nav {
   width: 100%;
   order: 3;
@@ -90,7 +90,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
   background-color: #0056b3; /* Darker blue on hover/active */
 }
 
-/* Hero Section */
+/* Hero Section (KEEP AS IS) */
 .hero {
   position: relative;
   height: 300px;
@@ -114,7 +114,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: purple; /* Consider changing this to white or a color that contrasts well with the overlay */
+  color: purple;
   text-align: center;
   background: rgba(0, 0, 0, 0.4);
   padding: 1rem 2rem;
@@ -132,7 +132,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
 }
 
 .cta-button {
-  background-color: #007acc; /* Your primary action color */
+  background-color: #007acc;
   color: white;
   padding: 0.6rem 1.2rem;
   text-decoration: none;
@@ -179,6 +179,15 @@ main {
   margin: 0 auto;
 }
 
+main .page-title {
+  color: #003366;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .site-name {
   font-size: 1.5rem;
   font-weight: bold;
@@ -191,13 +200,28 @@ main {
   gap: 1rem;
 }
 
+/* Consolidated H2 styling */
 h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.8rem;
-  color: #003366; /* Your primary blue for main headings */
+  color: #003366;
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
+/* Specific H2 sizes where needed - only override font-size if different from base h2 */
+.event-heading h2,
+.weather h2,
+.spotlights h2,
+.thank-you-section h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.thankyou-details h2 {
+  font-size: 1.5rem; /* Specific smaller H2 for details */
+}
+
 
 .events {
   background-color: #ffffff;
@@ -233,14 +257,13 @@ h2 {
 }
 
 .event-heading h2 {
-  color: #003366 !important;
+  color: #003366;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
   margin: 0;
 }
 
 .weather {
-  background-color: #e0f4ff; /* Light blue background */
+  background-color: #e0f4ff;
   padding: 2rem 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -253,7 +276,7 @@ h2 {
 }
 
 .forecast-day {
-  background-color: #eaf4fc; /* Even lighter blue */
+  background-color: #eaf4fc;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -270,7 +293,7 @@ h2 {
 .spotlights {
   padding: 1.5rem;
   margin: 2rem 0;
-  background-color: #ccc; /* Grey background for spotlight section */
+  background-color: #ccc;
   border-radius: 10px;
 }
 
@@ -292,14 +315,7 @@ h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #003366;
-  font-size: 2rem;
   font-family: 'Ubuntu', sans-serif;
-}
-.weather h2, .events h2 {
-  color: #003366;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
-  text-align: center;
 }
 
 .spotlight-heading {
@@ -310,10 +326,9 @@ h2 {
   margin-bottom: 1rem;
 }
 
-
 .spotlight-heading h2 {
-  color: #003366 !important;
-  font-family: 'Ubuntu', sans-serif;  font-size: 2rem;
+  color: #003366;
+  font-family: 'Ubuntu', sans-serif;
   margin: 0;
 }
 
@@ -431,56 +446,45 @@ h2 {
     animation-delay: 0.6s;
   }
   .membership-card:nth-child(3) {
-    animation-delay: 0.9s; /* Corrected from 9s */
+    animation-delay: 0.9s;
   }
   .membership-card:nth-child(4) {
     animation-delay: 1.2s;
   }
 
 /* --- Join Page Specific Layout and Styling for Small Screens --- */
-/* (These typically stack vertically on small screens, grid applied in large-directory.css) */
 .join-section,
 .membership-section {
   margin-bottom: 2rem;
 }
 
-/* Updated join-form styles for better appeal */
-section.join-section h1 {
-    color: #003366; /* Match your other main headings */
-    font-size: 2rem !important; /* Make it prominent */
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-family: 'Ubuntu', sans-serif;
-}
-
 .join-form {
-    background-color: #ffffff; /* White background for the form area */
-    padding: 2.5rem 1.5rem; /* More padding for internal spacing */
+    background-color: #ffffff;
+    padding: 2.5rem 1.5rem; 
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Clearer shadow to make it stand out */
-    max-width: 600px; /* Optional: Give the form a max-width even on small screens */
-    margin: 0 auto 2rem auto; /* Center the form and add bottom margin */
-    display: flex; /* Already present, good */
-    flex-direction: column; /* Already present, good */
-    gap: 1.2rem; /* Increase gap between form elements slightly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+    margin: 0 auto 2rem auto;
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.2rem; 
 }
 
-/* Styles for all text-based inputs, email, tel, textarea, select */
+/* Styles for all text-based inputs, email, tel, textarea, select  */
 .join-form input[type="text"],
 .join-form input[type="email"],
 .join-form input[type="tel"],
 .join-form select,
 .join-form textarea {
-    width: 100%; /* Full width within its container */
-    padding: 0.8rem 1rem; /* Comfortable padding inside input fields */
-    margin-top: 0.3rem; /* Small space between label text and input */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 6px; /* Slightly rounded corners */
+    width: 100%; 
+    padding: 0.8rem 1rem; 
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     color: #333;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .join-form input[type="text"]:focus,
@@ -488,77 +492,76 @@ section.join-section h1 {
 .join-form input[type="tel"]:focus,
 .join-form select:focus,
 .join-form textarea:focus {
-    border-color: #007acc; /* Blue border on focus */
-    box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.2); /* Subtle blue glow on focus */
-    outline: none; /* Remove default outline */
+    border-color: #007acc; 
+    box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.2); 
+    outline: none; 
 }
 
 .join-form textarea {
-    min-height: 100px; /* Give textarea a good default height */
-    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; 
+    resize: vertical; 
 }
 
 /* Style for labels */
 .join-form label {
-    display: block; /* Ensures label takes full width and input is on next line if desired */
-    font-weight: 500; /* Slightly bolder text for labels */
-    color: #333; /* Darker color for good readability */
+    display: block; 
+    font-weight: 500; 
+    color: #333; 
     font-size: 1.05rem;
 }
 
 /* Style for the submit button */
 .join-form input[type="submit"] {
-    background-color: #007acc; /* Consistent with CTA buttons */
+    background-color: #007acc; 
     color: white;
     padding: 1rem 1.5rem;
     border: none;
-    border-radius: 8px; /* Slightly more rounded */
+    border-radius: 8px; 
     font-size: 1.15rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 1rem; /* Space above the button */
-    width: fit-content; /* Make button only as wide as its content */
-    align-self: center; /* Center the button if form is flex column */
+    margin-top: 1rem; 
+    width: fit-content; 
+    align-self: center; 
 }
 
 .join-form input[type="submit"]:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift effect */
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
 }
 
-/* Optional: Placeholder text styling */
 .join-form input::placeholder,
 .join-form textarea::placeholder {
     color: #888;
-    opacity: 1; /* Ensures placeholder is visible on all browsers */
+    opacity: 1; 
 }
 
 /* Specific styling for the select dropdown arrow (browser default usually fine, but for consistency) */
 .join-form select {
-    appearance: none; /* Remove default browser styling */
+    appearance: none; 
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23333" d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow */
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 1.2rem;
-    padding-right: 2.5rem; /* Make space for the custom arrow */
+    padding-right: 2.5rem; 
 }
 
 /* --- Thank You Page Specific Styles --- */
 .thank-you-section {
-  background-color: #ffffff; /* White background */
-  padding: 2rem 1.5rem; /* Good internal padding */
+  background-color: #ffffff; 
+  padding: 2rem 1.5rem; 
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for distinct block */
-  margin: 2rem auto; /* Center and add vertical space */
-  max-width: 600px; /* Limit width on small screens too */
-  text-align: center; /* Center main text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  margin: 2rem auto; 
+  max-width: 600px; 
+  text-align: center; 
 }
 
 .thank-you-section h1 {
-  color: #003366; /* Your primary blue */
+  color: #003366; 
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -571,17 +574,17 @@ section.join-section h1 {
 }
 
 .thankyou-details {
-  background-color: #f8f8f8; /* Light grey background for details block */
-  border: 1px solid #eee; /* Light border */
+  background-color: #f8f8f8; 
+  border: 1px solid #eee; 
   border-radius: 8px;
   padding: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  text-align: left; /* Align details text to the left */
+  text-align: left;
 }
 
 .thankyou-details h2 {
-  color: #007acc; /* Your action color for the welcome message */
+  color: #007acc; 
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   margin-top: 0;
@@ -630,7 +633,7 @@ section.join-section h1 {
 }
 
 .membership-card button {
-  background-color: #0A3614; /* Your primary action color */
+  background-color: #0A3614; 
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -639,66 +642,65 @@ section.join-section h1 {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .membership-card button:hover {
-  background-color: #BFFF00; /* Darker shade on hover */
+  background-color: #BFFF00; 
   color: #0A3614;
 }
 
 /* --- Modal Specific Styles (for Join page) --- */
 .Modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top, higher than other elements */
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.6); /* Semi-transparent black overlay */
-  opacity: 0; /* Start invisible for transition */
-  transition: opacity 0.3s ease-in-out; /* Smooth fade-in transition */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.6); 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
 }
 
-/* Class added by JavaScript to make the modal visible and trigger fade-in */
 .Modal.open {
     opacity: 1;
 }
 
 .modal-content {
-  background-color: #fefefe; /* Light background, consistent with your site's light elements */
-  margin: 10% auto; /* 10% from the top and centered horizontally */
+  background-color: #fefefe; 
+  margin: 10% auto;
   padding: 2rem;
-  border: 1px solid #888; /* Subtle border */
-  width: 90%; /* Responsive width */
-  max-width: 500px; /* Max width for larger screens */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Subtle shadow for depth */
-  position: relative; /* Needed for positioning the close button */
-  color: #333; /* Default text color for modal content */
+  border: 1px solid #888; 
+  width: 90%; 
+  max-width: 500px; 
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+  position: relative; 
+  color: #333; 
 }
 
 .modal-content h4 {
-    color: #003366; /* Use your primary blue for modal headings */
+    color: #003366; 
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 1rem;
 }
 
 .modal-content ul {
-    list-style-type: disc; /* Use standard bullet points */
-    margin-left: 1.5rem; /* Indent the list */
+    list-style-type: disc;
+    margin-left: 1.5rem;
     padding: 0;
 }
 
 .modal-content li {
     margin-bottom: 0.5rem;
-    color: #333; /* Darker text for readability */
+    color: #333;
 }
 
 .close {
-  color: #aaa; /* Lighter grey for consistency */
+  color: #aaa; 
   position: absolute;
   top: 10px;
   right: 20px;
-  /* Removed float: right; as 'position: absolute' handles placement */
+  
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -706,7 +708,7 @@ section.join-section h1 {
 
 .close:hover,
 .close:focus {
-  color: #007acc; /* Your primary blue on hover */
+  color: #007acc; 
   text-decoration: none;
 }
 
