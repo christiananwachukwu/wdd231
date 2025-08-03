@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Site Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Color Schema */
+        :root {
+            --primary-blue: #007BFF; 
+            --text-dark-grey: #333333; 
+            --background-light-grey: #F8F9FA; 
+            --border-light-grey: #DEE2E6; 
+            --white: #FFFFFF;
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Open Sans', sans-serif; 
+            color: var(--text-dark-grey);
+            background-color: var(--background-light-grey);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif; 
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--border-light-grey);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 25px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid var(--border-light-grey);
+            border-radius: 5px;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border-light-grey);
+            vertical-align: middle;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        .wireframe-description {
+            background-color: var(--background-light-grey);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .wireframe-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Individual Project Site Plan</h1>
+        <hr>
+
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>G-NATH GLOBAL COMMUNICATIONS LTD</strong></p>
+            <p>
+                This name was selected because it is concise, memorable, and directly communicates the nature of the business, a physical and and online store specializing in phones and accessories. The LTD suffix signifies a retail outlet, reinforcing its purpose.
+            </p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                The primary purpose of the G-NATH GLOBAL website is to establish a strong online presence for a small-scale business specializing in mobile phones, phone accessories, and various electronic gadgets. It aims to serve as a comprehensive platform where customers can easily browse, discover, and purchase products. The site will provide detailed product information, pricing, availability, and customer ratings, along with essential business contact information, fostering trust and accessibility for online shoppers. Ultimately, it seeks to expand the business's customer reach and facilitate online sales growth.
+            </p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <p>These questions represent typical inquiries from the target audience and will guide the content and functionality of the website:</p>
+            <ul>
+                <li><strong>"How can I quickly find a specific phone model, check its current price, and see if it's currently in stock?"</strong>
+                    <br><em>(This drives the need for a robust product search/filter, clear product pages with pricing and availability, and potentially a 'popular products' section on the homepage.)</em></li>
+                <li><strong>"I need to know the business's physical address, phone number, or email to get support for a recent purchase or ask a general inquiry."</strong>
+                    <br><em>(This highlights the importance of a clear and comprehensive Contact Page with a functional form and all necessary contact details.)</em></li>
+                <li><strong>"Are there any ongoing promotions or new arrivals for smartwatches or wireless headphones?"</strong>
+                    <br><em>(This indicates the need for promotional banners on the homepage, a dynamic products page, and potentially categories for easy navigation.)</em></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <p>The following colors will be used to define the visual identity of the G-NATH GLOBAL COMMUNICATIONS website:</p>
+            <ul>
+                <li>
+                    <span class="color-box" style="background-color: var(--primary-blue);"></span>
+                    <strong>Primary Blue ($#007BFF$)</strong>: This vibrant blue will be used for main headings, call-to-action buttons, interactive elements (like navigation links and modal triggers), and as an accent color for important information. It conveys trust, technology, and professionalism.
+                </li>
+                <li>
+                    <span class="color-box" style="background-color: var(--text-dark-grey);"></span>
+                    <strong>Dark Grey ($#333333$)</strong>: This will be the primary color for all body text, paragraphs, and general content. It ensures excellent readability against light backgrounds.
+                </li>
+                <li>
+                    <span class="color-box" style="background-color: var(--background-light-grey);"></span>
+                    <strong>Light Grey ($#F8F9FA$)</strong>: This will serve as the default background color for the overall page and some section backgrounds, providing a clean, modern, and spacious feel, allowing product images and content to stand out.
+                </li>
+                <li>
+                    <span class="color-box" style="background-color: var(--border-light-grey);"></span>
+                    <strong>Light Border Grey ($#DEE2E6$)</strong>: Used for subtle borders, dividers, and outlines to visually separate sections and elements without being distracting.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>The chosen fonts aim for a balance of modern aesthetics and high readability:</p>
+            <ul>
+                <li>
+                    <strong>Montserrat</strong> (Sans-serif):
+                    <br><em>Usage:</em> Applied to all headings ($h1$, $h2$, $h3$, etc.). Its clean, geometric lines give a contemporary and authoritative feel, suitable for titles and important labels.
+                </li>
+                <li>
+                    <strong>Open Sans</strong> (Sans-serif):
+                    <br><em>Usage:</em> Used for all body text, paragraphs, list items, and general content. Open Sans is highly legible across various screen sizes and provides a friendly yet professional appearance, ensuring comfortable reading for product descriptions and other information.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wireframe: Home Page Layout</h2>
+            <p>Below are conceptual wireframes for the home page, outlining the layout for mobile and desktop views. These sketches illustrate the main content blocks without specific styling or imagery.</p>
+
+            <div class="wireframe-grid">
+                <div>
+                    <h3>Mobile View Wireframe ($&lt; 768px$)</h3>
+                    <div class="wireframe-description">
+                        <p>[Header]</p>
+                        <ul>
+                            <li>Logo (Top Left)</li>
+                            <li>Hamburger Menu (Top Right)</li>
+                        </ul>
+                        <p>[Hero/Promotional Banner - Full Width]</p>
+                        <ul>
+                            <li>Carousel of current deals / featured products</li>
+                        </ul>
+                        <p>[Featured Products Section]</p>
+                        <ul>
+                            <li>"Popular Products" heading</li>
+                            <li>Scrollable row of small product cards (Image, Name, Price)</li>
+                        </ul>
+                        <p>[About Us Snippet]</p>
+                        <ul>
+                            <li>Short introduction to the business</li>
+                            <li>"Learn More" button</li>
+                        </ul>
+                        <p>[Footer]</p>
+                        <ul>
+                            <li>Simplified links (Home, Products, Contact)</li>
+                            <li>Social Media Icons</li>
+                            <li>Copyright info</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>Desktop View Wireframe ($&gt;= 768px$)</h3>
+                    <div class="wireframe-description">
+                        <p>[Header]</p>
+                        <ul>
+                            <li>Logo (Top Left)</li>
+                            <li>Main Navigation (Products, Contact, Favorites - Top Right)</li>
+                        </ul>
+                        <p>[Large Hero/Promotional Banner]</p>
+                        <ul>
+                            <li>High-impact image/video with clear call to action</li>
+                        </ul>
+                        <p>[Featured Products Grid]</p>
+                        <ul>
+                            <li>"Our Top Picks" heading</li>
+                            <li>Grid layout of 6-9 larger product cards (Image, Name, Price, Quick View button)</li>
+                        </ul>
+                        <p>[Categories Section]</p>
+                        <ul>
+                            <li>"Shop by Category" heading</li>
+                            <li>Grid of category links (e.g., Phones, Laptops, Accessories)</li>
+                        </ul>
+                        <p>[Newsletter Signup]</p>
+                        <ul>
+                            <li>Email input field and "Subscribe" button</li>
+                        </ul>
+                        <p>[Footer]</p>
+                        <ul>
+                            <li>Multi-column layout: About Us, Quick Links, Contact Info, Social Media Icons</li>
+                            <li>Copyright info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

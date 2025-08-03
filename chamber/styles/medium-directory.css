@@ -1,0 +1,58 @@
+/* === MEDIUM-DIRECTORY.CSS === */
+
+@media screen and (min-width: 641px) { 
+
+  /* Discover Page Grid Layout for Medium Screens */
+  #discover-cards-container {
+      grid-template-columns: 1fr 1fr; 
+      gap: 2rem; 
+      padding: 1.5rem; 
+  }
+
+  main {
+      padding: 1.5rem;
+  }
+
+  .main-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+  }
+
+  /* Hide menu button on medium screens if it's shown on small */
+  #menu-button {
+    display: none;
+  }
+
+  /* Show navigation on medium screens if it's hidden on small */
+  nav ul.navigation {
+    display: flex !important; 
+    flex-direction: row;
+    gap: 1.5rem; 
+    justify-content: flex-end;
+    background-color: transparent;
+    margin-left: auto;
+  }
+
+  nav ul.navigation li {
+    border-bottom: none; 
+  }
+
+  nav ul.navigation li a {
+    padding: 0.5rem 0.75rem; 
+  }
+
+  .header-container {
+    padding: 1rem 1.5rem; 
+  }
+
+  /* --- NEW: Image Hover Effect for Gallery Images --- */
+  .discover-card figure img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effect */
+  }
+
+  .discover-card figure img:hover {
+      transform: scale(1.05); /* Makes the image slightly larger */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+      cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+}

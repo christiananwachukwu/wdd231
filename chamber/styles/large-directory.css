@@ -1,6 +1,6 @@
 /* === LARGE-DIRECTORY.CSS === */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) { /* Adjusted breakpoint for large screens */
   /* Header */
   .header-container {
     padding: 1rem 2rem;
@@ -96,6 +96,14 @@
   .spotlight-card {
     flex: 1 1 30%;
     max-width: 300px;
+  }
+
+  /* --- Specific Grid for Discover Page Cards --- */
+  #discover-cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 2.5rem; 
+      padding: 2rem;
   }
 
   /* Member Display Styles for Directory Page */

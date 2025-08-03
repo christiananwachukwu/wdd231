@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Owerri Mall",
+    "address": "Egbu Road, Owerri, Imo State",
+    "description": "A popular shopping destination featuring various stores, restaurants, and entertainment options. A hub for modern retail in Owerri.",
+    "image": "owerri-mall.webp",
+    "learnMoreUrl": "https://example.com/owerri-mall"
+  },
+  {
+    "name": "Mbari Cultural Centre",
+    "address": "Ikenegbu, Owerri, Imo State",
+    "description": "A unique open-air museum showcasing traditional Igbo art, sculptures, and cultural artifacts, reflecting the rich heritage of the people.",
+    "image": "mbari-cultural-centre.webp",
+    "learnMoreUrl": "https://example.com/mbari-cultural-centre"
+  },
+  {
+    "name": "Imo Concord Hotel",
+    "address": "Portharcourt Road, Owerri, Imo State",
+    "description": "a premier luxury hotel offering upscale accomodation, dining, and confrence facilities, known for its elegant ambiance.",
+    "image": "imo-concord-hotel.webp",
+    "learnMoreUrl": "https://example.com/imo-concord-hotel"
+  },
+  {
+    "name": "Oguta Lake",
+    "address": "Oguta, Imo State (near Owerri)",
+    "description": "A large natural lake famous for its clear waters and serene environment, offering opportunities for boating and relaxation.",
+    "image": "oguta-lake.webp",
+    "learnMoreUrl": "https://example.com/oguta-lake"
+  },
+  {
+    "name": "Assumpta Cathedral",
+    "address": "Assumpta Avenue, Owerri, Imo State",
+    "description": "One of the largest Catholic cathedrals in West Africa, known for its impressive architecture and spiritual significance.",
+    "image": "assumpta-cathedral.webp",
+    "learnMoreUrl": "https://example.com/assumpta-cathedral"
+  },
+  {
+    "name": "Nekede Zoo",
+    "address": "Nekede, Owerri, Imo State",
+    "description": "A wildlife park home to various indigenous and exotic animals, offering educational and recreational experiences for families.",
+    "image": "nekede-zoo.webp",
+    "learnMoreUrl": "https://example.com/nekede-zoo"
+  },
+  {
+    "name": "Eke Ukwu Market",
+    "address": "Douglas Road, Owerri, Imo State",
+    "description": "The largest and most historic market in Owerri, a vibrant hub of commerce and textiles, food, and local crafts.",
+    "image": "eke-ukwu-market.webp",
+    "learnMoreUrl": "https://example.com/eke-ukwu-market"
+  },
+  {
+    "name": "Alvan Ikoku Federal College of Education",
+    "address": "Wetheral Road, Owerri, Imo State",
+    "description": "A prominent federal college of education, a hub for teacher training and academic research in the region.",
+    "image": "alvan-ikoku.webp",
+    "learnMoreUrl": "https://example.com/alvan-ikoku.webp"
+  }
+]

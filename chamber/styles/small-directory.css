@@ -49,7 +49,7 @@ header {
   cursor: pointer;
 }
 
-/* Navigation (KEEP AS IS) */
+/* Navigation */
 nav {
   width: 100%;
   order: 3;
@@ -175,7 +175,7 @@ nav ul.navigation li a:hover, nav ul.navigation li a.active {
 /* Main Content */
 main {
   padding: 1rem;
-  max-width: 960px; /* Max width for general content on small screens (can be overridden by large-directory.css) */
+  max-width: 960px; 
   margin: 0 auto;
 }
 
@@ -738,6 +738,75 @@ h2 {
 
 .view-toggle button:hover:not(.active) {
   background-color: #0e0e0e;
+}
+
+.chamber-section {
+    padding: 1rem; 
+    margin-bottom: 1.5rem; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+#discover-cards-container {
+    display: grid; 
+    gap: 1.5rem; 
+}
+
+.discover-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #fefefe;
+}
+
+.discover-card h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.discover-card figure {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.discover-card img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 4px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.discover-card address {
+    font-style: normal; 
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.discover-card .learn-more-button {
+    display: inline-block;
+    background-color: #003366; 
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.discover-card .learn-more-button:hover {
+    background-color: #002244;
 }
 
 /* Footer */

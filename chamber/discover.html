@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Owerri, Chamber of Commerce , Imo State, Nigeria. Learn about demographics, attractions, and features of our vibrant community.">
+    <meta name="author" content="Christiana Nwachukwu">
+    <meta property="og:title" content="Discover | Owerri Chamber of Commerce">
+
+    <meta property="og:description" content="Explore the best of Owerri: attractions, demographics and community features for visitors and prospective members.">
+    <meta property="og:image" content="https://christiananwachukwu.github.io/wdd231/chamber/images/social-share.webp">
+    <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <title>Discover | Owerri Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-directory.css">
+    <link rel="stylesheet" href="styles/medium-directory.css" media="(min-width: 641px)">
+    <link rel="stylesheet" href="styles/large-directory.css" media="(min-width: 1025px)">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="branding">
+            <img src="images/logo.svg" alt="Owerri Chamber of Commerce Logo" width="48" height="48">
+            </div>
+            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join Us</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Discover Our Community</h1>
+        <div id="visit-message-section" class="chamber-section">
+            <p id="visit-message"></p>
+        </div>
+        <section id="discover-cards-container" class="chamber-section">
+            <h2>Highlights of Owerri</h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Owerri Chamber of Commerce</h3>
+            <p>Imo State, Nigeria | 461103</p>
+            <p>Email: christy4one@gmail.com</p>
+            <p>Phone: (234) 80 63862357</p>
+        </div>
+
+       <div class="social-icons">
+                <a href="https://github.com/christiananwachukwu" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github-brands.svg" alt="GitHub icon" width="32" height="32">
+                </a>
+                <a href="https://www.linkedin.com/in/christiana-nwachukwu-3ab796151?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin-brands.svg" alt="LinkedIn icon" width="32" height="32">
+                </a>
+                <a href="https://www.facebook.com/christy.nwachukwu?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook-brands.svg" alt="Facebook icon" width="32" height="32">
+                </a>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; <span id="year"></span> Owerri Chamber of Commerce</p>
+                <p>WDD 231 Project | Christiana Nwachukwu</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
