@@ -1,0 +1,75 @@
+/* === MEDIUM SCREEN STYLES (TABLET) === */
+@media screen and (min-width: 641px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+        order: initial;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        border-bottom: none;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+        text-align: left;
+    }
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .product-cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        overflow-x: hidden;
+    }
+
+    footer {
+        padding: 1rem 2rem;
+    }
+
+    .footer-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+    .footer-contact {
+        text-align: left;
+        display: block;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center; 
+        gap: 1rem;
+    }
+
+    .footer-info {
+        text-align: right; 
+    }
+}

@@ -1,101 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the Owerri Chamber of Commerce. Discover local businesses, events, and opportunities to grow and connect.">
+    <title>Home | G NAATH GLOBAL COMMUNICATIONS LTD</title>
+    <meta name="description" content="Your trusted source for mobile phones, accessories, and electronic gadgets.">
     <meta name="author" content="Christiana Nwachukwu">
-    <meta property="og:title" content="Home | Owerri Chamber of Commerce">
-
-    <meta property="og:description" content="Explore Owerri Chamber of Commerce: local business support, networking, and community development.">
-    <meta property="og:image" content="https://christiananwachukwu.github.io/wdd231/chamber/images/social-share.webp">
-    <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/chamber/index.html">
+    <meta property="og:title" content="G NAATH GLOBAL COMMUNICATIONS LTD">
+    <meta property="og:description" content="Patronize us for the best services and quality gadgets.">
+    <meta property="og:image" content="https://christiananwachukwu.github.io/wdd231/project/images/social-share.webp">
+    <meta property="og:url" content="https://christiananwachukwu.github.io/wdd231/Project/index.html">
     <meta property="og:type" content="website">
-    <title>Home | Owerri Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preload" href="images/hero-image.webp" as="image">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small-directory.css">
-    <link rel="stylesheet" href="styles/large-directory.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (min-width:600px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
 
-    <link rel="icon" href="images/favicon.ico">
-
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="branding">
-            <img src="images/logo.svg" alt="Owerri Chamber of Commerce Logo" width="48" height="48">
+            <div class="logo">
+                <img src="images/favicon.ico" alt="G-NAATH GLOBAL COMMUNICATIONS LTDogo" width="50" height="50">
+                <h1>G NAATH GLOBAL COMMUNICATIONS LTD</h1>
             </div>
-            <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <button id="menu-button">☰</button>
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">Discover</a></li>
-
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main>
-        <h1>Owerri Chamber of Commerce</h1>
         <section class="hero">
-            <img src="images/home-hero.webp" alt="Owerri Chamber of Commerce Home Hero Image" >
             <div class="hero-text">
-                <h2>Welcome to Owerri Chamber of Commerce</h2>
-                <p>Connecting businesses, growing communities.</p>
-                <a href="#" class="cta-button">Join the Chamber</a>
+                <h2>Motto: Ultimate Satisfaction Assured</h2>
+                <img src="images/hero-image.webp" alt="G Naath Glo Communications Ltd hero image" width="1200" height="800" fetchpriority="high">
+                <p>Explore our latest mobile phones, accessories, and gadgets.</p>
+                <a href="products.html" class="cta-button">Shop Now</a>
             </div>
         </section>
 
-        <section class="events">
-            <div class="event-loading">
-            <h2>Upcoming Events</h2>
-            </div>
-            <div class="event-details">
-            <ul>
-                <li><strong>SME Business Workshop</strong> - July 23, 2025</li>
-                <li><strong>Owerri Trade Fair</strong> - August 12, 2025</li>
-                <li><strong>Enterprenuers Networking Gala</strong> - November 28, 2025</li>
-            </ul>
-            </div>
+        <section class="featured-products">
+            <h2>Popular Products</h2>
+            <div class="product-cards-container">
+                </div>
         </section>
 
-        <section class="weather">
-            <h2>Current Weather in Owerri</h2>
-            <div class="weather-info">
-                <img id="weather-icon" src="images/placeholder.png" alt="Weather Icon" width="60" height="60" loading="lazy">
-                <p><span id="current-temp"></span> - <span id="weather-desc"></span></p>
-            </div>
-            <h3>3-Day Forecast</h3>
-            <div id="forecast-cards" class="forecast-container">
-            </div>
-        </section>
-
-        <section class="spotlight-grid" id="spotlight-section">
-            <div class="spotlight-heading">
-            <h2>Member Spotlights</h2>
-            </div>
-            <div class="spotlight-container" id="spotlights">
-            </div>
+        <section class="about-snippet">
+            <h2>About Us</h2>
+            <p>We are a small-scale business specializing in mobile phones, phone accessories, and various electronic gadgets. Our goal is to provide quality products and excellent customer service to our community.</p>
+            <a href="about.html" class="cta-button">Learn More</a>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer-contact">
-            <h3>Owerri Chamber of Commerce</h3>
-            <p>Imo State, Nigeria | 461103</p>
-            <p>Email: christy4one@gmail.com</p>
-            <p>Phone: (234) 80 63862357</p>
+            <h3>G NAATH GLOBAL COMMUNICATIONS LTD</h3>
+            <p>Afikpo Road, Abia State University, Uturu. Nigeria</p>
+            <p>Email: georgenwachukwu13@gmail.com</p>
+            <p>Phone: (234) 70 34791996</p>
         </div>
 
        <div class="social-icons">
@@ -106,16 +83,18 @@
                     <img src="images/linkedin-brands.svg" alt="LinkedIn icon" width="32" height="32">
                 </a>
                 <a href="https://www.facebook.com/christy.nwachukwu?mibextid=ZbWKwL" target="_blank">
-                    <img src="images/facebook-brands.svg" alt="Facebook icon" width="32" height="32">  
+                    <img src="images/facebook-brands.svg" alt="Facebook icon" width="32" height="32">
+                </a>
+                <a href="https://wa.me/2347034791996" target="_blank">
+                    <img src="images/whatsapp-brands-solid.svg" alt="WhatsApp icon" width="32" height="32">
                 </a>
         </div>
-        
-        <div class="footer-container">
-            <div class="footer-info">
-                <p>&copy; <span id="year"></span> Owerri Chamber of Commerce</p>
+
+        <div class="footer-info">
+                <p>&copy; <span id="year"></span> G NAATH GLOBAL COMMUNICATIONS LTD</p>
                 <p>WDD 231 Project | Christiana Nwachukwu</p>
+                <p><a href="http://your-video-url-here">Video Demonstration</a></p>
                 <p id="lastModified"></p>
-            </div>
         </div>
     </footer>
 </body>

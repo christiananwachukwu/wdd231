@@ -1,0 +1,130 @@
+[
+    {
+        "id": "1",
+        "name": "Beats Wireless Headset",
+        "price": 250000,
+        "category": "headset",
+        "image": "images/beats.webp",
+        "description": "Premium wireless headset with exceptional sound quality and deep bass."
+    },
+    {
+        "id": "2",
+        "name": "Apple Earpods",
+        "price": 45000,
+        "category": "earphone",
+        "image": "images/earpods.webp",
+        "description": "Wired earpods designed for a comfortable fit and clear audio."
+    },
+    {
+        "id": "3",
+        "name": "Extension Cable",
+        "price": 8000,
+        "category": "accessory",
+        "image": "images/extension.webp",
+        "description": "Durable and long extension cable for a variety of devices."
+    },
+    {
+        "id": "4",
+        "name": "Fast Charger",
+        "price": 18000,
+        "category": "accessory",
+        "image": "images/fast-charger.webp",
+        "description": "High-speed charger to power up your devices quickly."
+    },
+    {
+        "id": "5",
+        "name": "Portable Hand Fan",
+        "price": 10000,
+        "category": "gadget",
+        "image": "images/hand-fan.webp",
+        "description": "A compact, rechargeable hand fan to keep you cool on the go."
+    },
+    {
+        "id": "6",
+        "name": "MOL Bluetooth Basebuds",
+        "price": 15000,
+        "category": "earbud",
+        "image": "images/mol-bluetooth-basebud.webp",
+        "description": "Wireless earbuds with a focus on powerful bass and stable connectivity."
+    },
+    {
+        "id": "7",
+        "name": "Over-Ear Headset",
+        "price": 30000,
+        "category": "headset",
+        "image": "images/headset.webp",
+        "description": "Comfortable over-ear headset for immersive sound and long-term use."
+    },
+    {
+        "id": "8",
+        "name": "MOL Direct iPhone Earphones",
+        "price": 12000,
+        "category": "earphone",
+        "image": "images/mol-direct-iphone-earphone.webp",
+        "description": "Wired earphones specifically designed for direct use with iPhones."
+    },
+    {
+        "id": "9",
+        "name": "MOL Fast Cable",
+        "price": 7500,
+        "category": "accessory",
+        "image": "images/mol-fast-cabel.webp",
+        "description": "A durable and fast-charging data cable for all your devices."
+    },
+    {
+        "id": "10",
+        "name": "MOL Music Speaker",
+        "price": 45000,
+        "category": "gadget",
+        "image": "images/mol-music-speaker.webp",
+        "description": "A portable speaker with rich audio, perfect for indoor and outdoor use."
+    },
+    {
+        "id": "11",
+        "name": "MOL Powerbank",
+        "price": 18500,
+        "category": "powerbank",
+        "image": "images/mol-powerbank.webp",
+        "description": "A reliable power bank to keep your devices charged throughout the day."
+    },
+    {
+        "id": "12",
+        "name": "Oraimo Earbuds",
+        "price": 22000,
+        "category": "earbud",
+        "image": "images/oriamo-earbud.webp",
+        "description": "True wireless earbuds with a sleek design and long battery life."
+    },
+    {
+        "id": "13",
+        "name": "Poolee 30000mAh Powerbank",
+        "price": 35000,
+        "category": "powerbank",
+        "image": "images/poolee-30000mah-powerbank.webp",
+        "description": "High-capacity power bank with a built-in lamp, ideal for travel and emergencies."
+    },
+    {
+        "id": "14",
+        "name": "Poolee Portable Radio",
+        "price": 28000,
+        "category": "gadget",
+        "image": "images/poolee-radio.webp",
+        "description": "A compact portable radio with excellent reception and clear sound."
+    },
+    {
+        "id": "15",
+        "name": "Power Bud",
+        "price": 15000,
+        "category": "earbud",
+        "image": "images/power-bud.webp",
+        "description": "Powerful and comfortable earbuds for your daily music and calls."
+    },
+    {
+        "id": "16",
+        "name": "Powerful Sound Earbuds",
+        "price": 20000,
+        "category": "earbud",
+        "image": "images/powerful-sound-earbud.webp",
+        "description": "Earbuds engineered to deliver a strong, clear, and immersive audio experience."
+    }
+]
