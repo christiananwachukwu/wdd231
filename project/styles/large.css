@@ -1,21 +1,20 @@
 /* === LARGE SCREEN STYLES (DESKTOP) === */
 @media screen and (min-width: 1025px) {
-    .header-container {
+    .header-container,
+    main,
+    .footer-grid-container {
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .header-container {
         padding: 1rem 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    main {
-        max-width: 1200px;
-    }
-
-    .hero-text h2 {
-        font-size: 3rem;
-    }
+    .hero-text h2 { font-size: 3rem; }
 
     .product-cards-container {
         display: grid;
@@ -31,17 +30,14 @@
     }
     
     .footer-grid-container {
-        max-width: 1200px;
-        margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         text-align: center;
         align-items: center;
     }
 
-    .footer-contact, .social-icons, .footer-info {
-        margin: 0;
-    }
-
+    .footer-contact, 
+    .social-icons, 
+    .footer-info { margin: 0; }
 }
