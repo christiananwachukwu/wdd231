@@ -1,7 +1,8 @@
 import { shuffleArray } from './product-data.js';
 
-const productGrid = document.querySelector('.product-cards-grid');
-const popularProductsContainer = document.querySelector('.product-cards-container');
+// UPDATED: Changed to new class names
+const productGrid = document.querySelector('.product-grid.vertical');
+const popularProductsContainer = document.querySelector('.product-grid.horizontal');
 const seeMoreButtonContainer = document.querySelector('.see-more-button-container');
 
 export function displayProducts(products, append = false) {
@@ -15,8 +16,8 @@ export function displayProducts(products, append = false) {
             <h3>${product.name}</h3>
             <p>Price: ₦${product.price.toLocaleString()}</p>
             <p>${product.description}</p>
-            <button class="view-details" data-id="${product.id}">View Details</button>
-            <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+            <button class="btn primary view-details" data-id="${product.id}">View Details</button>
+            <button class="btn dark add-to-cart" data-id="${product.id}">Add to Cart</button>
         `;
         productGrid.appendChild(productCard);
     });

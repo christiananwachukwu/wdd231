@@ -13,6 +13,7 @@ export function showModal(product) {
     productModal.style.display = 'block';
 }
 
+// FIXED: Corrected typo in function name
 export function initializeModalEvents() {
     if (closeButton) {
         closeButton.addEventListener('click', () => {

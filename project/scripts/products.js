@@ -2,7 +2,8 @@ import { fetchProducts } from './product-data.js';
 import { displayProducts, displayPopularProducts, createSeeMoreButton } from './product-display.js';
 import { showModal, initializeModalEvents } from './product-modal.js';
 
-const productGrid = document.querySelector('.product-cards-grid');
+// UPDATED: Changed from '.product-cards-grid' to '.product-grid.vertical'
+const productGrid = document.querySelector('.product-grid.vertical');
 
 export async function getAndDisplayProducts() {
     try {

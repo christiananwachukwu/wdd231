@@ -14,9 +14,10 @@ import {
     initializeContactFormToggle();
     initializeProductEvents();
 
-    if (document.querySelector('.product-cards-grid')) {
+    // UPDATED CLASS NAMES - Changed from old to new class structure
+    if (document.querySelector('.product-grid.vertical')) {
         getAndDisplayProducts();
-    } else if (document.querySelector('.product-cards-container')) {
+    } else if (document.querySelector('.product-grid.horizontal')) {
         displayPopular();
     }
 
