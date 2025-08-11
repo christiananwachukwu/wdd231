@@ -11,7 +11,7 @@ export function displayProducts(products, append = false) {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
         productCard.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" loading="lazy" width="300" height="300">
+            <img src="${product.image}" alt="${product.name}" loading="lazy" width="300" height="200">
             <h3>${product.name}</h3>
             <p>Price: ₦${product.price.toLocaleString()}</p>
             <p>${product.description}</p>
@@ -33,7 +33,7 @@ export function displayPopularProducts(products) {
         productCard.classList.add('product-card');
         productCard.innerHTML = `
             <a href="products.html">
-                <img src="${product.image}" alt="${product.name}" width="300" height="300" loading="lazy">
+                <img src="${product.image}" alt="${product.name}" width="300" height="200" loading="lazy">
                 <h3>${product.name}</h3>
             </a>
         `;
