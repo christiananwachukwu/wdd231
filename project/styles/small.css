@@ -75,7 +75,6 @@ nav {
     width: 100%;
     order: 3;
 }
-
 nav.open { display: block; }
 
 .navigation {
@@ -83,12 +82,10 @@ nav.open { display: block; }
     padding: 0;
     margin: 0;
 }
-
 .navigation li { 
     border-bottom: 1px solid var(--border-light-grey); 
     margin: 0 4px;
 }
-
 .navigation a {
     text-decoration: none;
     color: var(--white); 
@@ -99,7 +96,6 @@ nav.open { display: block; }
     text-align: center;
     transition: background-color 0.3s ease;
 }
-
 .navigation a:hover,
 .navigation a.active {
     background-color: var(--color-heading-text); 
@@ -109,7 +105,7 @@ nav.open { display: block; }
 main { padding: 1rem; }
 
 /* === REUSABLE UTILITY CLASSES === */
-.card, .form-container { /* Consolidated styles for boxes and forms */
+.card {
     margin-top: 2rem;
     padding: 1rem;
     background-color: var(--white);
@@ -117,7 +113,10 @@ main { padding: 1rem; }
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: var(--text-dark-grey);
 }
-
+.card a:not(.btn) {
+    color: var(--text-dark-grey); 
+    text-decoration: none;
+}
 .btn {
     display: inline-block;
     color: var(--white); 
@@ -129,10 +128,8 @@ main { padding: 1rem; }
     transition: background-color 0.3s ease;
     margin-top: 1rem;
 }
-
 .btn-primary { background-color: var(--color-primary-background); }
 .btn-primary:hover { background-color: var(--color-heading-text); }
-
 .btn-dark { background-color: var(--text-dark-grey); }
 .btn-dark:hover { background-color: #555; }
 
@@ -149,7 +146,6 @@ main { padding: 1rem; }
     align-items: center;
     overflow: hidden;
 }
-
 .hero-background-image {
     position: absolute;
     top: 0;
@@ -159,7 +155,6 @@ main { padding: 1rem; }
     object-fit: cover; 
     z-index: -1; 
 }
-
 .hero-text {
     position: relative; 
     z-index: 1;
@@ -167,7 +162,6 @@ main { padding: 1rem; }
     padding: 1rem;
     border-radius: 8px;
 }
-
 .hero-text h2,
 .hero-text p { 
     color: var(--white); 
@@ -183,10 +177,11 @@ main { padding: 1rem; }
     padding: 1rem 0;
     min-height: 400px;
 }
-
 .product-cards-container { overflow-x: auto; }
-.product-cards-grid { display: grid; grid-template-columns: 1fr; }
-
+.product-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .product-card {
     background-color: var(--white);
     padding: 1rem;
@@ -196,8 +191,10 @@ main { padding: 1rem; }
     min-height: 350px;
     flex: 0 0 auto; 
 }
-
-.product-card a { text-decoration: none; color: var(--color-heading-text); }
+.product-card a {
+    text-decoration: none;
+    color: var(--color-heading-text);
+}
 .product-card img {
     max-width: 100%;
     height: auto;
@@ -207,13 +204,10 @@ main { padding: 1rem; }
     transition: transform 0.3s ease;
 }
 .product-card img:hover { transform: scale(1.05); }
-
 .product-card .btn {
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
 }
-
-/* Consolidated product card button colors into the main button classes */
 .product-card .add-to-cart { background-color: var(--text-dark-grey); }
 .product-card .add-to-cart:hover { background-color: #555; }
 .product-card .view-details { background-color: var(--color-primary-background); }
@@ -239,35 +233,35 @@ main { padding: 1rem; }
 
 /* === CONTACT FORM === */
 .contact-container { padding: 2rem 1rem; }
-form {
+.contact-container form {
     background-color: var(--white);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-fieldset {
+.contact-container fieldset {
     border: 1px solid var(--border-light-grey);
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 2rem;
 }
-legend {
+.contact-container legend {
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0 0.5rem;
     color: var(--color-heading-text);
 }
-label {
+.contact-container label {
     display: block;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="tel"],
+.contact-container select,
+.contact-container textarea {
     width: 100%;
     padding: 0.75rem;
     border: 1px solid var(--border-light-grey);
@@ -275,8 +269,8 @@ textarea {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-textarea { resize: vertical; height: 100px; }
-button[type="submit"] {
+.contact-container textarea { resize: vertical; height: 100px; }
+.contact-container button[type="submit"] {
     display: block;
     width: 100%;
     padding: 1rem;
@@ -288,7 +282,7 @@ button[type="submit"] {
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
 }
-button[type="submit"]:hover { background-color: #0056b3; }
+.contact-container button[type="submit"]:hover { background-color: #0056b3; }
 
 /* === FOOTER === */
 footer {
@@ -300,7 +294,6 @@ footer {
     min-height: 2rem;
     text-align: center;
 }
-
 .footer-grid-container {
     display: flex;
     flex-direction: column;
@@ -308,9 +301,6 @@ footer {
     align-items: center;
     min-height: 250px; 
 }
-
-.footer-contact, .footer-info { min-height: 100px; }
-
 .social-icons {
     min-height: 32px; 
     display: flex;
@@ -319,22 +309,21 @@ footer {
     margin-bottom: 1.5rem;
     margin-top: 1rem;
 }
-
 .social-icons img {
     width: 28px;
     height: auto;
     transition: transform 0.3s ease;
 }
-
 .social-icons img:hover { transform: scale(1.1); }
-
 .footer-text { 
     color: var(--white); 
     margin: 0.2rem 0;
     min-height: 1.2rem;
 }
-
-.footer-info p a { color: var(--white); text-decoration: underline; }
+.footer-text a {
+    color: var(--white);
+    text-decoration: underline;
+}
 
 /* === PAGE TITLES === */
 .page-title-section { text-align: center; margin: 2rem 0; }
@@ -350,13 +339,11 @@ footer {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 .modal.visible {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .modal-content {
     background-color: #fefefe;
     padding: 2rem;
@@ -370,16 +357,13 @@ footer {
     text-align: center;
     overflow-y: auto; 
 }
-
 @keyframes fadein { from {opacity: 0;} to {opacity: 1;} }
-
 .modal-content img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
 }
-
 .close-button {
     color: #666; 
     position: absolute;
@@ -390,6 +374,5 @@ footer {
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
 .close-button:hover,
 .close-button:focus { color: #333; }
