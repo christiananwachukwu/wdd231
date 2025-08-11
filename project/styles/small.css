@@ -58,11 +58,13 @@ header {
     height: auto;
 }
 
-.logo h1 {
+.site-name { 
     font-size: 1.2rem;
     margin: 0;
     line-height: 1;
-    color: var(--white); 
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 #menu-button {
@@ -96,8 +98,8 @@ nav.open { display: block; }
     text-decoration: none;
     color: var(--white); 
     padding: 12px 16px;
-    min-height: 48px;
-    min-width: 48px;
+    min-height: 48px; 
+    min-width: 48px; 
     display: block;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -214,9 +216,8 @@ main { padding: 1rem; }
 
 .product-card img:hover { transform: scale(1.05); }
 
-/* Merged button styles */
-.product-card.add-to-cart,
-.product-card.view-details { 
+/* Refactored button styles to reduce class count */
+.product-button {
     color: var(--white); 
     border: none;
     padding: 0.5rem 1rem;
@@ -226,12 +227,12 @@ main { padding: 1rem; }
     transition: background-color 0.3s ease;
 }
 
-.product-card.add-to-cart { background-color: var(--text-dark-grey); }
-.product-card.add-to-cart:hover { background-color: #555; }
+.product-card .add-to-cart { background-color: var(--text-dark-grey); }
+.product-card .add-to-cart:hover { background-color: #555; }
 
-.product-card.view-details { background-color: var(--color-primary-background); }
-.product-card.view-details:hover { background-color: #001f3f; }
-.product-card.view-details:active { background-color: #001122; }
+.product-card .view-details { background-color: var(--color-primary-background); }
+.product-card .view-details:hover { background-color: #001f3f; }
+.product-card .view-details:active { background-color: #001122; }
 
 .product-card h3 { font-size: 1.2rem; margin: 0.5rem 0; }
 .product-card p { margin: 0.2rem 0; }
@@ -414,7 +415,7 @@ footer {
 }
 
 .close-button {
-    color: #666; /* improved contrast */
+    color: #666;
     position: absolute;
     top: 10px;
     right: 20px;
